@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DevOps Automation</title>
+    <script>
+        async function generateDockerfile() {
+            const language = document.getElementById('docker-language').value;
+            const response = await fetch('/generate/dockerfile', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({language})
+            });
+            const data = await response.json();
+            document.getElementById('docker-output').innerText = data.content || data.error;
+        }
+
+        async function generateK8sYaml() {
+            const k8sObject = document.getElementById('k8s-object').value;
+            const appName = document.getElementById('app-name').value;
+            const response = await fetch('/generate/k8s', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({k8s_object: k8sObject, app_name: appName})
+            });
+            const data = await response.json();
+            document.getElementById('k8s-output').innerText = data.content || data.error;
+        }
+    </script>
+</head>
+<body>
+    <h2>Dockerfile Generator</h2>
+    <label>Language:</label>
+    <select id="docker-language">
+        <option value="python">Python</option>
+        <option value="java">Java</option>
+        <option value="golang">Golang</option>
+        <option value="javascript">JavaScript</option>
+    </select>
+    <button onclick="generateDockerfile()">Generate Dockerfile</button>
+    <pre id="docker-output"></pre>
+
+    <h2>Kubernetes YAML Generator</h2>
+    <label>Kubernetes Object:</label>
+    <select id="k8s-object">
+        <option value="pod">Pod</option>
+        <option value="deployment">Deployment</option>
+        <option value="service">Service</option>
+        <option value="configmap">ConfigMap</option>
+        <option value="secret">Secret</option>
+        <option value="hpa">HPA</option>
+    </select>
+    <label>App Name:</label>
+    <input type="text" id="app-name" placeholder="Enter App Name">
+    <button onclick="generateK8sYaml()">Generate Kubernetes YAML</button>
+    <pre id="k8s-output"></pre>
+</body>
+</html>
