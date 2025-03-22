@@ -35,6 +35,9 @@
         <option value="java">Java</option>
         <option value="golang">Golang</option>
         <option value="javascript">JavaScript</option>
+        <option value="php">PHP</option>
+        <option value="typescript">TypeScript</option>
+        
     </select>
     <button onclick="generateDockerfile()">Generate Dockerfile</button>
     <pre id="docker-output"></pre>
@@ -48,6 +51,12 @@
         <option value="configmap">ConfigMap</option>
         <option value="secret">Secret</option>
         <option value="hpa">HPA</option>
+        <option value="pvc">PVC</option>
+        <option value="pv">PV</option>
+        <option value="daemonset">DaemonSet</option>
+        <option value="poddisruptionbudgets">PodDisruptionBudget</option>
+        <option value="podsecuritypolicies">PodSecurityPolicy</option>
+         
     </select>
     <label>App Name:</label>
     <input type="text" id="app-name" placeholder="Enter App Name">
