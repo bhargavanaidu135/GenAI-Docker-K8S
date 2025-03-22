@@ -1,10 +1,10 @@
 import ollama
 
 # Allowed programming languages for Dockerfile generation
-ALLOWED_LANGUAGES = ["python", "java", "golang", "javascript"]
+ALLOWED_LANGUAGES = ["python", "java", "golang", "javascript", "php", "typescript"]
 
 # Allowed Kubernetes objects
-K8S_OBJECTS = ["pod", "deployment", "service", "configmap", "secret", "hpa"]
+K8S_OBJECTS = ["pod", "deployment", "service", "configmap", "secret", "hpa", "pvc", "pv", "daemonset", "pdb", "psp"]
 
 def generate_dockerfile(language):
     """Generates a secure Dockerfile using Ollama LLM for the selected language."""
@@ -38,7 +38,7 @@ def generate_k8s_yaml(k8s_object, app_name):
     Ensure it follows best practices such as:
     - Proper labels and selectors
     - Secure and minimal configurations
-    - Best practices for high availability (if applicable)
+    - Best practices for high availability,if applicable
     Provide only the YAML content.
     """
 
