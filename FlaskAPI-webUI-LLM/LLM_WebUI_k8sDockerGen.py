@@ -7,7 +7,7 @@ app = Flask(__name__)
 ALLOWED_LANGUAGES = ["python", "java", "golang", "javascript", "php", "typescript"]
 
 # Allowed Kubernetes objects
-ALLOWED_K8S_OBJECTS = ["pod", "deployment", "service", "configmap", "secret", "hpa", "pvc", "pv", "daemonset", "podDisruptionBudget", "podSecurityPolicy"]
+ALLOWED_K8S_OBJECTS = ["pod", "deployment", "service", "configmap", "secret", "hpa", "pvc", "pv", "daemonset", "poddisruptionbudgets", "podsecuritypolicies"]
 
 # Function to generate Dockerfile using Ollama
 def generate_dockerfile(language):
