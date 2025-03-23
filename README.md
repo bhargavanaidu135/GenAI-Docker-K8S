@@ -41,7 +41,7 @@ pip3 install ollama
 ```
 
 STEP3: 
-## Create Flask REST API and webUI
+## Create Flask Rest Api and webUI
 
 Goto 'FlaskAPI-webUI-LLM' folder --> you would see the files LLM_WebUI_k8sDockerGen.py, requirements.txt, templates/index.html that contains the code for making flaskAPI and webUI for seamless user interactions.
 
