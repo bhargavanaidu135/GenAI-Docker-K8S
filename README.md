@@ -6,8 +6,8 @@ This project is aimed to generate docker and k8s dynamic config files locally by
 
 1. [Setup a Virtual Machine (VM) for running LLM](#setup-a-VM-based-on-LLM)
 2. [Install required dependencies](#install-required-dependencies)
-3. [Create Flask REST API and webUI](#flask-REST-API--A-webUI-for-user-interaction)
-4. [Run the flask app and access the webUI](#run-the-flask-app--access-via-browser)
+3. [Create Flask REST API and webUI](#create-flask-REST-API--webUI-for-user-interaction)
+4. [Run the flask app and access webUI via browser](#run-the-flask-app--access-ewbUI-via-browser)
 
    Must allow the port that you exposed the app on.(eg: 5000
 
@@ -41,7 +41,7 @@ pip3 install ollama
 ```
 
 STEP3: 
-## Flask REST API and A webUI for User Interaction
+## Create Flask REST API and webUI for User Interaction
 
 Goto 'FlaskAPI-webUI-LLM' folder --> you would see the files LLM_WebUI_k8sDockerGen.py, requirements.txt, templates/index.html that contains the code for making flaskAPI and webUI for seamless user interactions.
 
