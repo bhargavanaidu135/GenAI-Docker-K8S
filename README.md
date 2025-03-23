@@ -5,7 +5,7 @@ This project is aimed to generate docker and k8s dynamic config files locally by
 ## Table of Contents:
 
 1. [Setup a Virtual Machine (VM) for running LLM](#setup-a-VM-based-on-LLM)
-2. [Install required dependencies](#install-ollama--pythonflask)
+2. [Install required dependencies](#install-required-dependencies)
 3. [Create Flask REST API and webUI](#flask-REST-API--A-webUI-for-user-interaction)
 4. [Run the flask app and access the webUI](#run-the-flask-app--access-via-browser)
 
@@ -21,7 +21,7 @@ STEP1:
 Get the VM which is suitable for your LLM that you are planning to run. Must choose the RAM and CPU or GPU purpose computation to see the significant performance while running the model.
 
 STEP2: 
-## Install Ollama and pythonflask
+## Install required dependencies
 
 Ollama environment:
 ```
