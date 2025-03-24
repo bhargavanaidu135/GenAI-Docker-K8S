@@ -7,7 +7,7 @@ This project is aimed to generate docker and k8s dynamic config files locally by
 1. [Setup a Virtual Machine (VM) for running LLM](#setup-a-VM-based-on-LLM)
 2. [Install required dependencies](#install-required-dependencies)
 3. [Create Flask REST API and webUI](#create-flask-rest-api-and-webui)
-4. [Run Flask App and Access webUI via Browser](#run-the-flask-app-and-access-webui-via-browser)
+4. [Run Flask App and Access webUI via Browser](#run-flask-app-and-access-webui-via-browser)
 
    Must allow the port that you exposed the app on.(eg: 5000
 
