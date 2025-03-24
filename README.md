@@ -9,12 +9,12 @@ This project is aimed to generate docker and k8s dynamic config files locally by
 3. [Create Flask REST API and webUI](#create-flask-rest-api-and-webui)
 4. [Run Flask App and Access webUI via Browser](#run-flask-app-and-access-webui-via-browser)
 
-   Must allow the port that you exposed the app on.(eg: 5000
+   Must allow the port that you exposed the app on.(eg: 5000)
 
 Pre-Requisites:
 - A Virtual Machine (Required based on model you use for running)
 - knowledge of html and Python Flask REST API
--  
+  
 STEP1:
 ## Setup a VM based on LLM
 
